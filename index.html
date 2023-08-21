@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> Data Table</title>
+  <link rel="stylesheet" href="https://cdn.datatables.net/1.11.5/css/jquery.dataTables.min.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <style>
+    /* Custom styling */
+    body {
+      background-color: #f8f9fa;
+      font-family: Arial, sans-serif;
+    }
+    .header {
+      background-color: #343a40;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+    .container {
+      background-color: white;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+    /* Corporate styling */
+    .table {
+      border: 1px solid #e0e0e0;
+      border-radius: 5px;
+    }
+    .table thead th {
+      background-color: #343a40;
+      color: white;
+      border-top: none;
+      border-bottom: 2px solid #343a40;
+    }
+    .table tbody td {
+      border-top: none;
+    }
+    .form-control {
+      border-radius: 5px;
+    }
+  </style>
+</head>
+<body>
+
+<div class="header">
+  <h1>Data Table</h1>
+</div>
+
+<div class="container mt-4">
+ 
+  <table id="dataTable" class="table table-striped table-bordered" style="width:100%">
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>Name</th>
+        <th>Email</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>1</td>
+        <td>Megat Irfan</td>
+        <td>work@megatirfan.com</td>
+      </tr>
+
+      <tr>
+        <td>2</td>
+        <td>Ahmad Idham</td>
+        <td>work@ahmadidham.com</td>
+      </tr>
+      <!-- Repeat this structure for more data rows -->
+    </tbody>
+  </table>
+</div>
+<footer class="footer text-center py-3">
+    <p>Created &copy; 2023 By <a href="https://megatirfan.com" target="_blank">Megat Irfan</a>.</p>
+  </footer>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.datatables.net/1.11.5/js/jquery.dataTables.min.js"></script>
+<script src="https://cdn.datatables.net/1.11.5/js/dataTables.bootstrap4.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+<script>
+  $(document).ready(function() {
+    const dataTable = $('#dataTable').DataTable();
+
+   
+  });
+</script>
+
+</body>
+</html>
